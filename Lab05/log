@@ -1,0 +1,95 @@
+/home/trempele/Lab05
+/home/trempele/Lab05
+a.out
+example1
+example1.c
+example2
+example2.c
+example3
+example3.c
+example4
+example4.c
+example5
+example5.c
+example6
+example6.c
+log
+-bash: cd: /trempele/Lab05: No such file or directory
+-bash: cd: home/trempele/Lab05: No such file or directory
+
+Command 'start' not found, did you mean:
+
+  command 'startx' from deb xinit (1.4.1-0ubuntu2)
+  command 'rstart' from deb x11-session-utils (7.7+4)
+  command 'stat' from deb coreutils (8.30-3ubuntu2)
+  command 'tart' from deb tart (3.10-1build1)
+
+Try: apt install <deb name>
+
+stat: cannot stat 'filename': No such file or directory
+  File: example1.c
+  Size: 485       	Blocks: 8          IO Block: 4096   regular file
+Device: 811h/2065d	Inode: 303169      Links: 1
+Access: (0664/-rw-rw-r--)  Uid: ( 1309/trempele)   Gid: ( 1311/trempele)
+Access: 2024-12-16 11:44:55.515027733 +0200
+Modify: 2024-12-16 11:44:42.506950946 +0200
+Change: 2024-12-16 11:44:42.506950946 +0200
+ Birth: -
+mv: target 'even.txt' is not a directory
+mv: cannot stat 'example1.c': No such file or directory
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
+#include <stdio.h>
+
+int main(void) {
+    int x = 10;      // A normal integer variable
+    int *p;          // p is a pointer to an integer
+
+    p = &x;          // p now holds the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", (void*)&x);
+    printf("Value of p: %p\n", (void*)p);
+    printf("Value pointed to by p: %d\n", *p);
+
+    *p = 20;         // Change the value of x using the pointer
+    printf("New value of x: %d\n", x);
+
+    return 0;
+}
